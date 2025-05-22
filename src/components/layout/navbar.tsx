@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, X, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
@@ -58,7 +58,7 @@ export const Navbar: FC = () => {
                 <div className="flex justify-between items-center">
                     <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                         <Code2 className="h-6 w-6 text-primary" />
-                        <span className="text-lg font-semibold">Bibhuti's Canvas</span>
+                        <SheetTitle>Bibhuti's Canvas</SheetTitle>
                     </Link>
                     <SheetClose asChild>
                         <Button variant="ghost" size="icon" aria-label="Close mobile menu">
