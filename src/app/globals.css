@@ -53,7 +53,7 @@
   }
 
   .dark {
-    --background: 210 13% 19%; /* Dark Gray (#292F36) */
+    --background: 212 14% 19%; /* Dark Gray (#292F36) */
     --foreground: 220 50% 90%; /* Light Lavender/Blue */
 
     --card: 210 12% 23%; /* Slightly lighter dark cool gray for cards */
