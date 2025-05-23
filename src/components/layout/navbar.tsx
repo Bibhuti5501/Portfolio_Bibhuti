@@ -45,10 +45,10 @@ export const Navbar: FC = () => {
           ))}
         </nav>
 
-        {/* Right Side Button */}
+        {/* Download Button */}
         <div className="absolute right-12 transform -translate-y-2/1 hidden md:flex items-left space-x-4">
           <a
-            href="/path-to-your-cv.pdf" // Replace with actual CV file path
+            href="/BIBHUTI BHUSHAN Software Devloper (1).pdf" // Replace with actual CV file path
             download
             className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-full text-sm transition-colors"
           >
@@ -67,15 +67,18 @@ export const Navbar: FC = () => {
             <SheetContent side="right" className="w-full max-w-xs bg-background p-6">
               <div className="flex flex-col space-y-6">
                 <div className="flex justify-between items-center">
-                    <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                        <Code2 className="h-6 w-6 text-primary" />
-                        <SheetTitle>Bibhuti's Canvas</SheetTitle>
-                    </Link>
-                    <SheetClose asChild>
-                        <Button variant="ghost" size="icon" aria-label="Close mobile menu">
-                            <X className="h-6 w-6" />
-                        </Button>
-                    </SheetClose>
+                  <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Code2 className="h-6 w-6 text-primary" />
+                    <SheetTitle>Bibhuti's Portfolio</SheetTitle>
+                  </Link>
+                  <SheetClose asChild>
+                    <button
+                      className="p-2 rounded-md hover:bg-muted transition"
+                      aria-label="Close mobile menu"
+                    >
+                      <X className="h-6 w-6 text-muted-foreground" />
+                    </button>
+                  </SheetClose>
                 </div>
                 <nav className="flex flex-col space-y-4">
                   {navItems.map((item) => (
@@ -90,6 +93,14 @@ export const Navbar: FC = () => {
                     </SheetClose>
                   ))}
                 </nav>
+                {/* Mobile download button */}
+                <a
+                  href="/BIBHUTI BHUSHAN Software Devloper (1).pdf" // Replace with your actual file path
+                  download
+                  className="mt-6 inline-block w-full text-center bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-full text-base transition-colors"
+                >
+                  Download CV
+                </a>
               </div>
             </SheetContent>
           </Sheet>

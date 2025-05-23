@@ -20,7 +20,7 @@ export const AboutSection: FC = () => {
             <div className="md:col-span-2 flex justify-center">
                 <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl border-4 border-primary/50">
                     <Image 
-                        src="https://placehold.co/300x300.png" 
+                        src="/myProfile.JPG" // Replace with your image path
                         alt="Bibhuti - Full-Stack Developer" 
                         layout="fill" 
                         objectFit="cover"
@@ -41,7 +41,7 @@ export const AboutSection: FC = () => {
                             With a keen eye for detail and a commitment to clean, efficient code, I thrive on transforming complex problems into elegant digital experiences. I am continuously learning and exploring new technologies to stay at the forefront of web development.
                         </p>
                         <p>
-                            When I'm not coding, I enjoy exploring new tech trends, contributing to open-source projects, and [mention a hobby or two if you like].
+                            When I'm not coding, I enjoy exploring new tech trends, contributing to open-source projects, and also MotoGP and Formula 1 most of the time.
                         </p>
                     </CardContent>
                 </Card>
