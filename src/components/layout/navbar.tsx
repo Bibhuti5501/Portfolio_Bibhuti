@@ -26,14 +26,14 @@ export const Navbar: FC = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
+      <div className="container flex h-16 max-w-screen-2xl flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-80" aria-label="Bibhuti's Digital Canvas Home">
-          <Code2 className="h-7 w-7 text-primary" />
-          <span className="text-xl font-bold">Bibhuti's Digital Canvas</span>
+          <Code2 className="h-7 w-7 ml-12 text-primary" />
+          <span className="text-xl font-bold">Bibhuti's Portfolio</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -44,6 +44,17 @@ export const Navbar: FC = () => {
             </Link>
           ))}
         </nav>
+
+        {/* Right Side Button */}
+        <div className="absolute right-12 transform -translate-y-2/1 hidden md:flex items-left space-x-4">
+          <a
+            href="/path-to-your-cv.pdf" // Replace with actual CV file path
+            download
+            className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-full text-sm transition-colors"
+          >
+            Download CV
+          </a>
+        </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden">

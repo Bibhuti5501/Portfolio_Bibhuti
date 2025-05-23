@@ -13,11 +13,13 @@ const skills: string[] = [
   "Java",
   "Spring Boot",
   "REST API",
+  "Git",
   "HTML",
   "CSS",
   "Next.js",
   "Tailwind CSS",
   "TypeScript",
+  "JavaScript",
 ];
 
 export const HeroSection: FC = () => {
